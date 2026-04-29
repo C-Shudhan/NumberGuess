@@ -1,0 +1,101 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #e6e6e6;
+  display: flex;
+  justify-content: center;
+}
+
+/* Main container */
+#container {
+  width: 1100px;
+  margin-top: 40px;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Top bar */
+#top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#text h2 {
+  margin: 0;
+}
+
+/* Navigation */
+#options ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  padding: 0;
+}
+
+#options a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Game area */
+#selection {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* Range info */
+#range {
+  font-size: 14px;
+}
+
+/* Guess box */
+#guess {
+  text-align: center;
+  flex: 1;
+}
+
+/* Input */
+#guessInput {
+  width: 100px;
+  padding: 10px;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Buttons */
+button, .btn {
+  padding: 10px 16px;
+  border: 1px solid black;
+  background: transparent;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover, .btn:hover {
+  background-color: #f2f2f2;
+}
+
+/* Messages */
+#message {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+#attempts {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Extra section */
+#extra ul {
+  list-style: none;
+  padding: 0;
+  font-size: 14px;
+}

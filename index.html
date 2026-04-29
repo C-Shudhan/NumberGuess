@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A new web page">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" href="style.css">
+    <title>Number Guessing Game</title>
+</head>
+<body>
+  
+  <div id="container">
+    
+    
+    
+    <div id="top">
+      
+      <div id="about">
+        <h4>About Us</h4>
+      </div>
+      
+      <div id="text">
+        <h2>Number Guessing Game</h2>
+      </div>
+      
+      <div id="options">
+        <ul>
+          <li><b>~ Classic</b></li>
+          <li><a href="challenge.html">Challenge</a></li>
+          <li><a href="multiplayer.html">Multiplayer</a></li>
+        </ul>
+      </div>
+      
+    </div>
+    
+    
+    <div id="selection">
+      
+      <div id="range">
+        <p>Range:</p>
+        <select id="select">
+          <option value="100">1-100</option>
+          <option value="500">1-500</option>
+          <option value="1000">1-1000</option>
+          <option value="5000">1-5000</option>
+          <option value="10000">1-10000</option>
+        </select>
+        <p>Difficulty:</p>
+        <select id="difficultySelect">
+          <option value="neutral">Neutral</option>
+          <option value="easy">Easy</option>
+          <option value="veasy">Guided (Very Easy)</option>
+        </select>
+      </div>
+      
+      <div id="blank">
+        <p>Please choose the settings and click the button below to start</p>
+      </div>
+      
+      
+      <div id="extra">
+        <p><b>Other Games:</b></p>
+        <ul>
+          <li>Guess the Age</li>
+          <li>Guess the Celebrity</li>
+          <li>Guess the Brand</li>
+        </ul>
+      </div>
+      
+    </div>
+    
+    
+    <div id="bottom">
+      <center><button id="startGameBtn">Guess a number</button></center>
+    </div>
+    
+    
+    
+    
+  </div>
+
+
+<script>
+document.getElementById("startGameBtn").addEventListener("click", () => {
+    const range = document.getElementById("select").value;
+const difficulty = document.getElementById("difficultySelect").value;
+
+window.location.href = `classic_guess.html?max=${range}&difficulty=${difficulty}`;
+});
+</script>
+</body>
+</html>
